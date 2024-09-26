@@ -1,0 +1,7 @@
+###
+POST http://localhost:3000/math/evaluate HTTP/1.1
+content-type: application/json
+
+{
+  "expression": "(1 << 4) * 2"
+}
