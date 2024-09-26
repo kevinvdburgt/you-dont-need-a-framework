@@ -1,0 +1,32 @@
+{
+  "name": "@kevinvdburgt/you-dont-need-a-framework",
+  "private": true,
+  "maintainers": [
+    "Kevin van der Burgt <kevin@binarylab.nl>"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22.7.0",
+    "pnpm": ">=9.9.0"
+  },
+  "scripts": {
+    "dev": "node --import ./scripts/dev-loader.js --watch ./src/main.ts",
+    "build": "rimraf dist && tsc",
+    "start": "node ./dist/main.js"
+  },
+  "dependencies": {
+    "@types/node": "^22.7.2",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "ts-pattern": "^5.4.0",
+    "typescript": "^5.6.2",
+    "winston": "^3.14.2",
+    "zod": "^3.23.8"
+  }
+}
